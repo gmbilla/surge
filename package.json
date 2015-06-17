@@ -1,9 +1,16 @@
-"git": {
+{
+	"name": "@surge/example-githooks",
+	"description": "My personal website",
+	"homepage": "https://gmbilla.surge.sh",
+	"repository": "https://github.com/gmbilla/surge.git",
+	"author": "Gian Marco Sibilla <gm.sibilla@gmail.com>",
+	"git": {
+		"scripts": {
+			"post-commit": "npm run deploy",
+			"pre-push": "npm run deploy"
+		}
+	},
 	"scripts": {
-		"post-commit": "npm run deploy",
-		"pre-push": "npm run deploy"
+		"deploy": "surge --project ./"
 	}
-},
-"scripts": {
-	"deploy": "surge"
 }

@@ -1,2 +1,3 @@
-# gmbilla.surge.sh
-My personal website
+# surge
+
+A personal website running on [surge](https://surge.sh/).
